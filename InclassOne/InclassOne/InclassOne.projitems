@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>3dcc576b-5d84-4d8a-9986-0ed5d00f17e6</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>InclassOne</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Contact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContactDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EditContactPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ISQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NewContactPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DownloadImagePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DateTimePickerPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CarouselPageDemo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TabbedPageDemo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)WebPagePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LocalImagePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContactListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StopWatchAppPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NavigationPageDemo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ScrollViewDemoPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SliderAndSwitch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FormsMenuPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BoxViewDemoPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FrameDemoPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContentPageDemoPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StackLayoutDemoPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LabelDemoPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
